@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #0f172a;
+  background: #f8fafc;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+* { box-sizing: border-box; }
+
+img { max-width: 100%; display: block; }
+
+#root { min-height: 100vh; }
+
+@layer components {
+  .container-shell {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-space {
+    @apply py-12 md:py-16;
+  }
+
+  .section-heading {
+    @apply mb-6 font-serif text-2xl font-bold tracking-tight text-brand-900 md:text-3xl border-b-2 border-isi-gold-500 pb-2 inline-block;
+  }
+
+  .eyebrow {
+    @apply mb-3 inline-flex items-center gap-1.5 rounded-md border border-brand-200 bg-brand-50/80 px-3 py-1 text-xs font-bold uppercase tracking-[0.16em] text-brand-800;
+  }
+
+  .card-surface {
+    @apply rounded-lg border border-slate-200/80 bg-white shadow-soft transition-all duration-300 hover:shadow-academic hover:border-brand-300;
+  }
+
+  .card-academic {
+    @apply rounded-lg border border-slate-200 bg-white shadow-soft border-t-4 border-t-brand-700 transition-all duration-300 hover:shadow-academic hover:-translate-y-0.5;
+  }
+
+  .card-gold-accent {
+    @apply rounded-lg border border-slate-200 bg-white shadow-soft border-t-4 border-t-isi-gold-500 transition-all duration-300 hover:shadow-academic hover:-translate-y-0.5;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-md bg-brand-700 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-all duration-200 hover:bg-brand-800 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-isi-gold-500 focus:ring-offset-2 active:bg-brand-900;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center rounded-md border border-brand-700 bg-white px-5 py-2.5 text-sm font-semibold text-brand-800 shadow-sm transition-all duration-200 hover:bg-brand-50 hover:border-brand-800 focus:outline-none focus:ring-2 focus:ring-isi-gold-500 focus:ring-offset-2;
+  }
+
+  .btn-gold {
+    @apply inline-flex items-center justify-center rounded-md bg-isi-gold-500 px-5 py-2.5 text-sm font-bold text-brand-900 shadow-sm transition-all duration-200 hover:bg-isi-gold-600 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-brand-700 focus:ring-offset-2;
+  }
+
+  .status-badge {
+    @apply inline-flex items-center rounded-md px-2.5 py-0.5 text-xs font-bold tracking-wide uppercase;
+  }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.animate-marquee {
+  display: inline-block;
+  animation: marquee 25s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+
