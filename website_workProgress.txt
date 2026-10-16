@@ -1,0 +1,11 @@
+2/10/26
+Project ISIWebsite
+1. New theam created for website. Client approved the theam. Modification suggested by client.
+2. Changes done and got approval.
+3. All code uploaded on gitHub of Shreetej
+5. Code got to laptop and take to Kunthal's machine
+6. New Vercel.com space created using srath02@yahoo.com account. 
+7. All code uploaded.
+8. Changes in the godaddy and on  vercel done and site now pointing to new space
+9. Query email code modifoioied so email is now genereted to Head@ISIpune.ac.in
+10.  First page table got new txt file to read and display. 16/10/26
